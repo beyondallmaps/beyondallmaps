@@ -24,11 +24,11 @@ body {
   min-height: 100vh;
 
   background-image:
-    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.45)),
+    linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.60)),
    url("/images/hero-mongolia-eagle-falconer-01.jpg");
 
   background-size: cover;
-  background-position: center center;
+ background-position: 55% center;
 
   display: flex;
   align-items: center;
@@ -36,31 +36,167 @@ body {
 }
 
 .hero-content {
-  text-align: center;
+  max-width: 520px;
+  margin-left: 3%;
+  margin-top: 38vh;
   color: white;
-  padding: 2rem;
+  text-align: left;
 }
 
 .eyebrow {
   text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: .9rem;
+  letter-spacing: .25em;
+  font-size: .85rem;
+  color: rgba(255,255,255,.9);
   margin-bottom: 1rem;
 }
 
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: clamp(4rem, 8vw, 7rem);
-  line-height: .95;
-  margin-bottom: .75rem;
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  line-height: .92;
+  color: white;
+  margin: .3rem 0 .8rem;
+  white-space: nowrap;
 }
 
 .subtitle {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  margin-bottom: .75rem;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: .5rem;
+  color: rgba(255,255,255,.95);
 }
 
 .author {
-  font-size: 1.1rem;
-  opacity: .9;
+  font-size: 1rem;
+  color: rgba(255,255,255,.75);
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 5rem;
+  padding: 14px 34px;
+
+  border: 2px solid white;
+  border-radius: 999px;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: all .3s ease;
+}
+
+.hero-button:hover {
+  background: white;
+  color: black;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+  background: #f8f7f3;
+  padding: 6rem 2rem;
+}
+
+.intro-content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.button-primary {
+  background: #1f5f73;
+  color: white;
+}
+
+.button-primary:hover {
+  background: #174957;
+}
+
+.button-secondary {
+  border: 2px solid #1f5f73;
+  color: #1f5f73;
+}
+
+.button-secondary:hover {
+  background: #1f5f73;
+  color: white;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  padding: 2rem 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.site-header nav a:hover {
+  opacity: .7;
 }

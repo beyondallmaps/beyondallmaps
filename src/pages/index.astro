@@ -1,22 +1,81 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Container from "../components/Container.astro";
-import Hero from "../components/Hero.astro";
 ---
 
+<footer class="footer">
+  <p>
+    © 2026 Beyond All Maps · Documentary Travel Photography by Thorsten Mehret
+  </p>
+</footer>
+
 <MainLayout
-  title="Beyond All Maps"
-  description="Authentic travel stories and photography from around the world."
+  title="Beyond All Maps | Documentary Travel Photography"
+  description="Documentary travel photography and authentic travel stories by Thorsten Mehret."
 >
+  <section class="hero">
+    <div class="hero-content">
 
-  <Container>
+      <p class="eyebrow">
+        Documentary Travel Photography
+      </p>
 
-<main>
+      <h1>
+        Beyond All Maps
+      </h1>
 
-  <Hero />
+      <p class="subtitle">
+        Portraits of our Planet
+      </p>
 
-</main>
+      <p class="author">
+        by Thorsten Mehret
+      </p>
 
-  </Container>
+      <a class="hero-button" href="#intro">
+        Explore the World
+      </a>
+
+    </div>
+  </section>
+
+  <section id="intro" class="intro">
+
+    <div class="intro-content">
+
+      <h2>Explore the World Through Photo Stories</h2>
+
+      <p>
+        Beyond All Maps is a long-term documentary travel photography project
+        exploring the people, landscapes, wildlife and cultures that make our
+        planet so extraordinary. Read complete photo stories on Exposure or
+        discover new destinations, travel inspiration and photography on
+        Pinterest.
+      </p>
+
+      <div class="intro-buttons">
+
+        <a
+          class="button-primary"
+          href="https://beyondallmaps.exposure.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explore Photo Stories
+        </a>
+
+        <a
+          class="button-secondary"
+          href="https://de.pinterest.com/BeyondAllMaps/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Follow on Pinterest
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </MainLayout>
